@@ -5,6 +5,10 @@ const port = 8000;
 // use express router
 app.use('/', require('./routes'));
 
+// FOR Setting  eJS part 
+app.set('view engine', 'ejs');
+app.set('view', './view');
+
 app.listen(port, function(err){
     if (err){
         console.log(`Error in running the server: ${err}`);
