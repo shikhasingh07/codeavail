@@ -7,7 +7,7 @@ app.use('/', require('./routes'));
 
 // FOR Setting  eJS part 
 app.set('view engine', 'ejs');
-app.set('view', './view');
+app.set('views','./views');
 
 app.listen(port, function(err){
     if (err){
